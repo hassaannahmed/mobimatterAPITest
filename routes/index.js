@@ -47,9 +47,10 @@ router.post("/orders/", function(req, res){
        }
      }).then(function(resp){
          //console.log(.data.lineItems)
-         res.status(200).json(JSON.parse(resp.data))
+         res.status(200).send(resp.data)
      }).catch(function (error) {
        // handle error
+       console.log(error)
        res.status(200).send(error.response.data)
        //console.log(error.response.data);
      })
