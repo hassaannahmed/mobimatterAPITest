@@ -53,7 +53,7 @@
         <div class="row">
             <div style="margin-left: auto; margin-right: auto;" class="form-group">
                 <label for="formGroupExampleInput">Partner ID</label>
-                <input type="text" class="form-control" id="partnerID" placeholder="ID">
+                <input type="text" style="width:40rem" class="form-control" id="partnerID" placeholder="ID">
               </div>
         </div>
         <br>
@@ -80,7 +80,7 @@
         <div class="row">
             <button type="button" onclick="extEur()" style="margin-left: auto; margin-right: auto;" class="btn btn-info">Extended Europe 3 GB</button>
             <button type="button" onclick="uk()" style="margin-left: auto; margin-right: auto;" class="btn btn-info">UK 3 GB</button>
-            <button type="button" onclick="outOfStock()" style="margin-left: auto; margin-right: auto;" class="btn btn-info">Out of Stock' Offer</button>
+            <button type="button" onclick="outOfStock()" style="margin-left: auto; margin-right: auto;" class="btn btn-info">Out of Stock</button>
 
         </div>
     </div>
@@ -121,7 +121,7 @@
             }
             function uk(){
                 console.log("UK")
-                var data = '{"partnerId": "60d800fa-426d-4b3a-a0f9-f0fb5cfe9755","offers":[{"id": "27D86359-1CC1-4CDC-8C30-490A52FB3D5E","quantity": '+quantity+'}]}'
+                var data = '{"partnerId": "'+partnerID+'","offers":[{"id": "27D86359-1CC1-4CDC-8C30-490A52FB3D5E","quantity": '+quantity+'}]}'
                 
                 $.ajax({
                 type: "POST",
@@ -135,7 +135,7 @@
             }
             function outOfStock(){
                 console.log("Out Of Stock")
-                var data = '{"partnerId": "60d800fa-426d-4b3a-a0f9-f0fb5cfe9755","offers":[{"id": "EB2DA77C-4922-46C6-9F2A-F6491FD906B7","quantity": '+quantity+'}]}'
+                var data = '{"partnerId": "'+partnerID+'","offers":[{"id": "EB2DA77C-4922-46C6-9F2A-F6491FD906B7","quantity": '+quantity+'}]}'
                 
                 $.ajax({
                 type: "POST",
