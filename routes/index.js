@@ -18,22 +18,26 @@ router.get('/', (req, res) => {
    res.sendFile(path + "index.html");
 });
  
+router.get('/orderspage', (req, res) => {
+    res.sendFile(path + "orders.html");
+ });
+
 router.post("/orders/", function(req, res){
    //console.log(req.body)
-   var obj1 = {
-    "partnerId" : "60d800fa-426d-4b3a-a0f9-f0fb5cfe9755",
-    "offers":
-        [
-            {
-                "id": "E7806032-3DF2-404C-95F3-1D964731D271",
-                "quantity": 1
-            },
-            {
-                "id": "EB2DA77C-4922-46C6-9F2A-F6491FD906B7",
-                "quantity": 6
-            }
-        ]
-    }
+//    var obj1 = {
+//     "partnerId" : "60d800fa-426d-4b3a-a0f9-f0fb5cfe9755",
+//     "offers":
+//         [
+//             {
+//                 "id": "E7806032-3DF2-404C-95F3-1D964731D271",
+//                 "quantity": 1
+//             },
+//             {
+//                 "id": "EB2DA77C-4922-46C6-9F2A-F6491FD906B7",
+//                 "quantity": 6
+//             }
+//         ]
+//     }
     
      console.log(JSON.parse(req.body.data))
      //console.log(obj1)

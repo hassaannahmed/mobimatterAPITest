@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MobiMatter API Test</title>
+<script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="nav" class="navbar navbar-expand-lg navbar-toggleable-lg">
+        <div class="container">
+            <a class="navbar-brand px-2 px-md-0" href="/">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="170.69" height="34.941" viewBox="0 0 170.69 34.941">
+                    <defs>
+                        <linearGradient id="linear-gradient" x1="0.469" y1="1.019" x2="0.531" y2="-0.019" gradientUnits="objectBoundingBox">
+                            <stop offset="0" stop-color="#6bcbdc"></stop>
+                            <stop offset="0.37" stop-color="#00aeef"></stop>
+                            <stop offset="0.63" stop-color="#00aeef"></stop>
+                            <stop offset="1" stop-color="#6bcbdc"></stop>
+                        </linearGradient>
+                    </defs>
+                    <g data-name="Group 23" transform="translate(3000 11142.059)">
+                        <path data-name="Path 2159" d="M10.619,4.206v.017A4.147,4.147,0,0,0,12.7,7.766a9.415,9.415,0,0,1,.3,2.372A8.744,8.744,0,0,1,11.842,14.6c-.672,1.125-1.223,1.329-1.223,2.875s.985,1.813,1.655,3.252a9.014,9.014,0,0,1,.805,3.792,9.369,9.369,0,0,1-.376,2.659,4.172,4.172,0,0,0-2.078,3.337v.207a4.407,4.407,0,0,0,4.57,4.223,4.408,4.408,0,0,0,4.572-4.223v-.207a4.17,4.17,0,0,0-2.078-3.337,9.369,9.369,0,0,1-.376-2.659,9.014,9.014,0,0,1,.8-3.792c.672-1.438,1.655-1.717,1.655-3.252s-.552-1.753-1.223-2.875a8.724,8.724,0,0,1-1.157-4.459,9.478,9.478,0,0,1,.3-2.372A4.151,4.151,0,0,0,19.77,4.223V4.206A4.429,4.429,0,0,0,15.186,0,4.4,4.4,0,0,0,10.619,4.206ZM26.4,6.261a4.266,4.266,0,0,0-4.117,4.4,4.812,4.812,0,0,0,.051.7,4.439,4.439,0,0,0,1.793,2.976,13.184,13.184,0,0,1,.254,2.627,11.876,11.876,0,0,1-.519,3.643,4.421,4.421,0,0,0-1.309,1.9,4.652,4.652,0,0,0-.268,1.565,4.266,4.266,0,0,0,4.117,4.4,4.266,4.266,0,0,0,4.117-4.4,4.653,4.653,0,0,0-.269-1.565,4.413,4.413,0,0,0-1.309-1.9,11.877,11.877,0,0,1-.528-3.643,13.179,13.179,0,0,1,.258-2.62,4.436,4.436,0,0,0,1.793-2.976,4.624,4.624,0,0,0,.052-.7,4.267,4.267,0,0,0-4.117-4.4Zm-22.279,0A4.266,4.266,0,0,0,0,10.663a4.813,4.813,0,0,0,.051.7,4.439,4.439,0,0,0,1.793,2.976A13.184,13.184,0,0,1,2.1,16.963,11.877,11.877,0,0,1,1.576,20.6a4.421,4.421,0,0,0-1.309,1.9A4.689,4.689,0,0,0,0,24.072a4.266,4.266,0,0,0,4.117,4.4,4.266,4.266,0,0,0,4.117-4.4,4.689,4.689,0,0,0-.268-1.565,4.413,4.413,0,0,0-1.31-1.9,11.918,11.918,0,0,1-.521-3.643,13.178,13.178,0,0,1,.254-2.62,4.443,4.443,0,0,0,1.793-2.976,4.813,4.813,0,0,0,.051-.7A4.266,4.266,0,0,0,4.116,6.261Z" transform="translate(-3000 -11142.059)" fill-rule="evenodd" fill="url(#linear-gradient)"></path>
+                        <text id="MobiMatter-logo" transform="translate(-2962.31 -11120.058)" font-size="18" font-family="EurostileExtended-Roman, Eurostile Extended">
+                            <tspan x="0" y="0">MobiMatter</tspan>
+                        </text>
+                    </g>
+                </svg>
+            </a>
+            
+            <div class="navbar-collapse d-lg-inline-flex px-3 px-md-0 collapse" style="">
+                <ul class="navbar-nav flex-grow-1">
+                    
+                </ul>
+                
+<ul class="navbar-nav">
+    
+    
+</ul>
+
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container">
+        <br>
+        <br>
+
+        <div class="row">
+            <div style="margin-left: auto; margin-right: auto;" class="form-group">
+                <label for="formGroupExampleInput">Partner ID</label>
+                <input type="text" class="form-control" id="partnerID" placeholder="ID">
+              </div>
+        </div>
+        <br>
+        <div class="row">
+            <!-- <label style="margin-right: auto; margin-left: auto;" for="cars">Choose a car:</label> -->
+            <div style="margin-left: auto; margin-right: auto;" class="form-group">
+                <label for="formGroupExampleInput">Quantity</label>
+            <select onchange="quantityChange()" style="margin-right: auto; margin-left: auto;" id="quantity">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+            </div>
+
+        </div>
+        <br>
+        <div class="row">
+            <button type="button" onclick="extEur()" style="margin-left: auto; margin-right: auto;" class="btn btn-info">Extended Europe 3 GB</button>
+            <button type="button" onclick="uk()" style="margin-left: auto; margin-right: auto;" class="btn btn-info">UK 3 GB</button>
+            <button type="button" onclick="outOfStock()" style="margin-left: auto; margin-right: auto;" class="btn btn-info">Out of Stock' Offer</button>
+
+        </div>
+    </div>
+    
+    <!-- <form action="" method="post">
+        <button value="send">Send</button> -->
+
+        <script>
+
+            // print($("#quantity").val())
+            
+
+            function quantityChange(){
+                var e = document.getElementById("quantity");
+                var strUser = e.options[e.selectedIndex].text;
+                
+            }
+
+        
+
+            function extEur(){
+                var e = document.getElementById("quantity");
+                var partnerID = document.getElementById("partnerID").value;
+            
+                var quantity = e.options[e.selectedIndex].text;
+                console.log("Extended Europe")
+                var data = '{"partnerId": "'+partnerID+'","offers":[{"id": "E7806032-3DF2-404C-95F3-1D964731D27B","quantity": '+quantity+'}]}'
+                
+                $.ajax({
+                type: "POST",
+                url: "/orders",
+                data: {"data":JSON.stringify(JSON.parse(data))},
+                success: function(data){
+                        console.log(JSON.stringify(JSON.parse(data), null, 4));
+                    },
+                dataType: 'text'
+                });
+            }
+            function uk(){
+                console.log("UK")
+                var data = '{"partnerId": "60d800fa-426d-4b3a-a0f9-f0fb5cfe9755","offers":[{"id": "27D86359-1CC1-4CDC-8C30-490A52FB3D5E","quantity": '+quantity+'}]}'
+                
+                $.ajax({
+                type: "POST",
+                url: "/orders",
+                data: {"data":JSON.stringify(JSON.parse(data))},
+                success: function(data){
+                        console.log(JSON.stringify(JSON.parse(data), null, 4));
+                    },
+                dataType: 'text'
+                });
+            }
+            function outOfStock(){
+                console.log("Out Of Stock")
+                var data = '{"partnerId": "60d800fa-426d-4b3a-a0f9-f0fb5cfe9755","offers":[{"id": "EB2DA77C-4922-46C6-9F2A-F6491FD906B7","quantity": '+quantity+'}]}'
+                
+                $.ajax({
+                type: "POST",
+                url: "/orders",
+                data: {"data":JSON.stringify(JSON.parse(data))},
+                success: function(data){
+                        console.log(JSON.stringify(JSON.parse(data), null, 4));
+                    },
+                dataType: 'text'
+                });
+            }
+
+        </script>
+        
+        
+
+</body>
+</html>
