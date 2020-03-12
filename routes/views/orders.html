@@ -127,6 +127,10 @@
                 });
             }
             function uk(){
+                var e = document.getElementById("quantity");
+                var partnerID = document.getElementById("partnerID").value;
+            
+                var quantity = e.options[e.selectedIndex].text;
                 console.log("UK")
                 var data = '{"partnerId": "'+partnerID+'","offers":[{"id": "27D86359-1CC1-4CDC-8C30-490A52FB3D5E","quantity": '+quantity+'}]}'
                 
@@ -141,6 +145,10 @@
                 });
             }
             function outOfStock(){
+                var e = document.getElementById("quantity");
+                var partnerID = document.getElementById("partnerID").value;
+            
+                var quantity = e.options[e.selectedIndex].text;
                 console.log("Out Of Stock")
                 var data = '{"partnerId": "'+partnerID+'","offers":[{"id": "EB2DA77C-4922-46C6-9F2A-F6491FD906B7","quantity": '+quantity+'}]}'
                 
