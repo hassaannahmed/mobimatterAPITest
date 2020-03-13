@@ -22,6 +22,10 @@ router.get('/orderspage', (req, res) => {
     res.sendFile(path + "orders.html");
  });
 
+ router.get('/buy', (req, res) => {
+    res.sendFile(path + "buy.html");
+ });
+
 router.post("/orders/", function(req, res){
    //console.log(req.body)
 //    var obj1 = {
