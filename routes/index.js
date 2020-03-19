@@ -22,8 +22,8 @@ router.get('/orderspage', (req, res) => {
     res.sendFile(path + "orders.html");
  });
 
- router.get('/buy', (req, res) => {
-    res.sendFile(path + "buy.html");
+ router.get('/CustomPayload', (req, res) => {
+    res.sendFile(path + "custompayload.html");
  });
 
 router.post("/orders/", function(req, res){
