@@ -50,15 +50,15 @@ router.post("/orders/", function(req, res){
        url: 'https://mobimatterpartner-sandbox.azurewebsites.net/api/v1/orders',
        data: JSON.parse(req.body.data),
        headers: {
-         'Content-Type': 'application/json'
-         //'Partner-Id' : '60d800fa-426d-4b3a-a0f9-f0fb5cfe9755'
+         'Content-Type': 'application/json',
+         'Partner-Id' : '60d800fa-426d-4b3a-a0f9-f0fb5cfe9752'
        }
      }).then(function(resp){
          //console.log(.data.lineItems)
          res.status(200).send(resp.data)
      }).catch(function (error) {
        // handle error
-       console.log(error)
+       //console.log(error)
        res.status(200).send(error.response.data)
        //console.log(error.response.data);
      })
